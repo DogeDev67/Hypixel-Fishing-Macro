@@ -4,7 +4,7 @@ import minescript
 
 
 def _fish_nearby():
-    for ent in minescript.entities(max_distance=5):
+    for ent in minescript.entities(max_distance=50):
         if "!!!" in ent.name:
             return True
     return False
@@ -21,4 +21,4 @@ while True:
         minescript.player_press_use(False)
 
     else:
-        time.sleep(0.1)
+        time.sleep(0.05)
